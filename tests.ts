@@ -8,15 +8,15 @@ import penguins from "./penguins.json" with { type: 'json' };
 /* Désactiver COPILOT pour que vous fassiez l'effort de lire */
 
 console.log("=== EXEMPLES DES MÉTHODES ARRAY AVEC LES DONNÉES PENGUINS ===\n");
-console.log(`Nombre total de pingouins: ${/* TODO */}\n`);
+console.log(`Nombre total de pingouins: ${penguins.length}\n`);
 
 // ===== MÉTHODES D'ACCÈS AUX ÉLÉMENTS =====
 
 console.log("--- MÉTHODES D'ACCÈS AUX ÉLÉMENTS ---");
 
 // at() - Accède à un élément par son indice (accepte les indices négatifs)
-console.log("• at() - Premier pingouin:", penguins.at(/* TODO */)?.species);
-console.log("• at() - Dernier pingouin:", penguins.at(/* TODO */)?.species);
+console.log("• at() - Premier pingouin:", penguins.at(0)?.species);
+console.log("• at() - Dernier pingouin:", penguins.at(-1)?.species);
 console.log();
 
 // slice() - Extrait une portion du tableau
